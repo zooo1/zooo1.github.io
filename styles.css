@@ -1,0 +1,235 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body {
+  font-family: "Pretendard";
+}
+/* navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+.navWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+}
+.navWrap .logo {
+  width: 60px;
+}
+
+.nav-wrap-left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-wrap-right {
+  display: flex;
+  gap: 25px;
+  font-size: 20px;
+  > li {
+    cursor: pointer;
+  }
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+/* main */
+.main-0 {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.main-1 {
+  display: flex;
+  .title {
+    font-size: 45px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+.main-1 button {
+  cursor: pointer;
+  margin-top: 30px;
+  padding: 15px 20px;
+  border-radius: 25px;
+  border: 2px solid #11b74c;
+  background-color: transparent;
+  color: #11b74c;
+  font-size: 16px;
+  font-weight: 600;
+}
+.main-1 button:hover {
+  background-color: #11b74c;
+  color: #fff;
+  transition: all 0.3s;
+}
+.main-1 .title {
+  line-height: 2;
+}
+.main-1 .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background-color: #f8f8f8;
+}
+.main-1 .right {
+  width: 70%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+  }
+}
+
+.main-1 .right .content-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.main-1 .right .right-first-wrap,
+.main-1 .right .right-second-wrap {
+  position: relative;
+  cursor: pointer;
+  height: 50%;
+  overflow: hidden;
+}
+
+.main-1 .right .right-first-wrap:hover,
+.main-1 .right .right-second-card:hover {
+  img {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+  }
+}
+.main-1 .right .right-second-wrap {
+  display: flex;
+}
+.main-1 .right .right-second-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 200px;
+}
+.main-2 .border-horizontal {
+  width: 1000px;
+  height: 1px;
+  background-color: #c8c8c8;
+}
+.main-2 .border {
+  width: 1px;
+  height: 200px;
+  background-color: #c8c8c8;
+}
+
+.main-2 .intro-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  min-width: 1000px;
+  img {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 650px;
+    height: 350px;
+  }
+}
+
+.main-2 .intro-card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  p {
+    color: #888;
+    line-height: 1.2;
+  }
+}
+
+.main-2 .card-wrap {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+}
+.main-2 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 250px;
+  text-align: center;
+}
+
+.main-2 .card .title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+}
+.main-2 .card .content {
+  color: #888;
+}
+/* footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  padding: 30px 0;
+  background-color: #252525;
+  color: #888;
+}
+
+footer .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #fff;
+}
+footer .introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
