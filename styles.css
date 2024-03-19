@@ -1,54 +1,3 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
-
-body {
-  font-family: "Pretendard";
-}
-/* navigation */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 10;
-}
-.navWrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-  max-width: 1200px;
-  margin: 0 auto;
-  color: #fff;
-}
-.navWrap .logo {
-  width: 60px;
-}
-
-.nav-wrap-left {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  cursor: pointer;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-wrap-right {
-  display: flex;
-  gap: 25px;
-  font-size: 20px;
-  > li {
-    cursor: pointer;
-  }
-}
-
-section {
-  width: 100%;
-  height: 100vh;
-}
 /* main */
 .main-0 {
   img {
@@ -68,7 +17,7 @@ section {
     line-height: 1.2;
   }
 }
-.main-1 button {
+.main-1 a {
   cursor: pointer;
   margin-top: 30px;
   padding: 15px 20px;
@@ -78,8 +27,9 @@ section {
   color: #11b74c;
   font-size: 16px;
   font-weight: 600;
+  text-decoration: none;
 }
-.main-1 button:hover {
+.main-1 a:hover {
   background-color: #11b74c;
   color: #fff;
   transition: all 0.3s;
@@ -94,6 +44,14 @@ section {
   align-items: center;
   width: 30%;
   background-color: #f8f8f8;
+  padding: 0 20px;
+  text-align: center;
+  .title {
+    font-weight: 600;
+  }
+  > p {
+    color: #888;
+  }
 }
 .main-1 .right {
   width: 70%;
@@ -145,6 +103,7 @@ section {
   gap: 50px;
   padding-top: 200px;
 }
+
 .main-2 .border-horizontal {
   width: 1000px;
   height: 1px;
@@ -207,29 +166,4 @@ section {
 }
 .main-2 .card .content {
   color: #888;
-}
-/* footer */
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 200px;
-  padding: 30px 0;
-  background-color: #252525;
-  color: #888;
-}
-
-footer .title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #fff;
-}
-footer .introduction {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 20px;
 }
