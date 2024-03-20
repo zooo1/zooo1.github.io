@@ -3,3 +3,44 @@
   height: 100%;
   object-fit: cover;
 }
+
+.main-1 ul {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.main-1 li {
+  cursor: pointer;
+  padding: 20px 30px;
+  font-size: 25px;
+  background-color: #f8f8f8;
+  color: #888;
+  border: 1px solid #f0f0f0;
+}
+.main-1 li:hover,
+.main-1 li.active {
+  background-color: #888;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.main-1 .wrap.ocean,
+.main-1 .wrap.air,
+.main-1 .wrap.dg,
+.main-1 .wrap.warehouse {
+  /* display: none; */
+}
+.main-1 .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.main-1 .wrap .title {
+  font-size: 45px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.main-2 .ocean {
+}
